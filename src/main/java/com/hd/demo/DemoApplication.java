@@ -19,7 +19,7 @@ public class DemoApplication {
     @Bean
     public MapperFactoryBean<UserMapper> initMybatisDao(){
         MapperFactoryBean<UserMapper> bean=new MapperFactoryBean<>();
-        bean.setMapperInterface(UserMapper.class);
+         bean.setMapperInterface(UserMapper.class);
         bean.setSqlSessionFactory(sqlSessionFactory);
         return bean;
     }
